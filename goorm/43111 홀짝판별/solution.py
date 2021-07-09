@@ -1,7 +1,10 @@
-def fib(n: int) -> int:
-    """Print a Fibonacci series up to n"""
-    a, b= 0,1
-    while a < n:
-        print(a, end=" ")
-        a,b = b, a+b
-    print()
+def main():
+    user_input = input()
+
+    if (int(user_input) % 2) == 0:
+        print("even")
+    else:
+        print("odd")
+
+
+main()
