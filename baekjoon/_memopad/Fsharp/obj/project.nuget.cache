@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "aflgCl1lI8Q3flT7oEV1jZLXq97imLmmkoTXY5Uyb4TLLj1ps+L8BeTxKK4ApUXwTDOnRrvQFJ+ggiW9uqZ5uw==",
+  "success": true,
+  "projectFilePath": "E:\\Projects\\algorithm\\baekjoon\\_memopad\\Fsharp\\Fsharp.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\juho_\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512",
+    "C:\\Users\\juho_\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.8\\microsoft.netcore.app.host.win-x64.5.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
