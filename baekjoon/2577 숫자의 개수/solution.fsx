@@ -1,14 +1,13 @@
-﻿open System
+open System
 open System.IO
 
-
 [<EntryPoint>]
-let main argv =
+let main argv = 
     use sr = new StreamReader(Console.OpenStandardInput())
     use sw = new StreamWriter(Console.OpenStandardOutput())
 
-    let readInt = sr.ReadLine() |> int
-    let a, b, c = readInt, readInt, readInt
+    let readInt = sr.ReadLine >> int
+    let a, b, c = readInt(), readInt(), readInt()
 
     let multipled = a * b * c
 
@@ -26,6 +25,5 @@ let main argv =
             match o with 
             | Some v -> v
             | None -> 0))
-    |> List.iter sw.WriteLine
+    |> List.iter Console.WriteLine
     0
-
