@@ -2,7 +2,10 @@ open System
 open System.IO
 
 let solve (numbers: int list): int = 
-    0
+    numbers
+    |> List.map (fun n -> n % 42)
+    |> List.distinct 
+    |> List.length
 
 [<EntryPoint>]
 let main argv = 

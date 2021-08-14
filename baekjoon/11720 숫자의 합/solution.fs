@@ -1,8 +1,8 @@
 open System
 open System.IO
 
-let solve (numbers: int list): int = 
-    0
+let solve (numberInString: string): int = 
+    numberInString |> Seq.map (string >> Int32.Parse) |> Seq.sum
 
 [<EntryPoint>]
 let main argv = 
@@ -10,11 +10,11 @@ let main argv =
     use sw = new StreamWriter(Console.OpenStandardOutput())
 
     // INPUT
-    let readInt = sr.ReadLine >> int
-    let numbers = List.init 10 (fun _ -> readInt())
+    let digitCount = sr.ReadLine() |> int
+    let numberInString = sr.ReadLine() 
 
     // PROCESSING
-    let answer = solve numbers
+    let answer = solve numberInString
 
     // PRINT
     sw.WriteLine answer

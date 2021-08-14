@@ -24,4 +24,3 @@ E:\Projects\algorithm\baekjoon\_memopad\Fsharp\obj\Debug\net5.0\Fsharp.AssemblyI
 E:\Projects\algorithm\baekjoon\_memopad\Fsharp\obj\Debug\net5.0\Fsharp.dll
 E:\Projects\algorithm\baekjoon\_memopad\Fsharp\obj\Debug\net5.0\Fsharp.pdb
 E:\Projects\algorithm\baekjoon\_memopad\Fsharp\obj\Debug\net5.0\Fsharp.genruntimeconfig.cache
-E:\Projects\algorithm\baekjoon\_memopad\Fsharp\obj\Debug\net5.0\Fsharp.fsproj.CopyComplete

@@ -1,8 +1,8 @@
 open System
 open System.IO
 
-let solve (numbers: int list): int = 
-    0
+let solve (c: char): int = 
+    c |> int
 
 [<EntryPoint>]
 let main argv = 
@@ -10,11 +10,10 @@ let main argv =
     use sw = new StreamWriter(Console.OpenStandardOutput())
 
     // INPUT
-    let readInt = sr.ReadLine >> int
-    let numbers = List.init 10 (fun _ -> readInt())
+    let char = sr.ReadLine() |> Seq.head
 
     // PROCESSING
-    let answer = solve numbers
+    let answer = solve char
 
     // PRINT
     sw.WriteLine answer
