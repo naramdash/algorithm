@@ -1,22 +1,23 @@
 open System
 open System.IO
 
-let solve (numbers: int list): int = 
-    0
+let solve (paragraph: string): int = 
+    if paragraph |> String.IsNullOrWhiteSpace then
+        0
+    else 
+        paragraph.Trim().Split(" ") |> Array.length
 
 
-// CEREMONY CODES
 [<EntryPoint>]
 let main argv = 
     use sr = new StreamReader(Console.OpenStandardInput())
     use sw = new StreamWriter(Console.OpenStandardOutput())
 
     // INPUT
-    let readInt = sr.ReadLine >> int
-    let numbers = List.init 10 (fun _ -> readInt())
+    let paragraph = sr.ReadLine()
 
     // PROCESSING
-    let answer = solve numbers
+    let answer = solve paragraph
 
     // PRINT
     sw.WriteLine answer
